@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.Verify">
+        <methods>
+          <include name="verifyVersion"/>
+          <include name="setPath"/>
+          <include name="openB"/>
+          <include name="closeB"/>
+        </methods>
+      </class> <!-- script.Verify -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

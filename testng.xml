@@ -1,0 +1,8 @@
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.Verify"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,8 +1,16 @@
-<suite name="Suite">
-  <test name="Test">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite" parallel="tests">
+   <test name="ChromeTest">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="script.Verify"/>
+      <class name="script.OutLetRod"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="FirefoxTest">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.OutLetRod"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

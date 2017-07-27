@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13748" started-at="2017-07-16T10:06:24Z" finished-at="2017-07-16T10:06:38Z">
+  <suite name="AutomationSuite" duration-ms="268156" started-at="2017-07-26T14:34:06Z" finished-at="2017-07-26T14:38:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13748" started-at="2017-07-16T10:06:24Z" finished-at="2017-07-16T10:06:38Z">
-      <class name="script.Verify">
-        <test-method status="PASS" signature="setPath()[pri:0, instance:script.Verify@3159c4b8]" name="setPath" is-config="true" duration-ms="11" started-at="2017-07-16T15:36:24Z" finished-at="2017-07-16T15:36:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setPath -->
-        <test-method status="PASS" signature="openB(java.lang.String)[pri:0, instance:script.Verify@3159c4b8]" name="openB" is-config="true" duration-ms="5148" started-at="2017-07-16T15:36:24Z" finished-at="2017-07-16T15:36:29Z">
+    <test name="ChromeTest" duration-ms="245267" started-at="2017-07-26T14:34:06Z" finished-at="2017-07-26T14:38:12Z">
+      <class name="script.OutLetRod">
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@2d928643]" name="open" is-config="true" duration-ms="25160" started-at="2017-07-26T20:04:06Z" finished-at="2017-07-26T20:04:32Z">
           <params>
             <param index="0">
               <value>
@@ -21,16 +17,189 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openB -->
-        <test-method status="PASS" signature="verifyVersion()[pri:0, instance:script.Verify@3159c4b8]" name="verifyVersion" duration-ms="8417" started-at="2017-07-16T15:36:29Z" finished-at="2017-07-16T15:36:38Z">
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="EachLetter()[pri:1, instance:script.OutLetRod@2d928643]" name="EachLetter" duration-ms="100568" started-at="2017-07-26T20:04:32Z" finished-at="2017-07-26T20:06:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyVersion -->
-        <test-method status="PASS" signature="closeB()[pri:0, instance:script.Verify@3159c4b8]" name="closeB" is-config="true" duration-ms="161" started-at="2017-07-16T15:36:38Z" finished-at="2017-07-16T15:36:38Z">
+        </test-method> <!-- EachLetter -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@2d928643]" name="open" is-config="true" duration-ms="28138" started-at="2017-07-26T20:06:12Z" finished-at="2017-07-26T20:06:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeB -->
-      </class> <!-- script.Verify -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="infieldClickable()[pri:2, instance:script.OutLetRod@2d928643]" name="infieldClickable" duration-ms="22513" started-at="2017-07-26T20:06:40Z" finished-at="2017-07-26T20:07:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infieldClickable -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@2d928643]" name="open" is-config="true" duration-ms="26946" started-at="2017-07-26T20:07:03Z" finished-at="2017-07-26T20:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="space()[pri:3, instance:script.OutLetRod@2d928643]" name="space" duration-ms="8816" started-at="2017-07-26T20:07:30Z" finished-at="2017-07-26T20:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- space -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@2d928643]" name="open" is-config="true" duration-ms="32599" started-at="2017-07-26T20:07:39Z" finished-at="2017-07-26T20:08:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="FAIL" signature="http()[pri:4, instance:script.OutLetRod@2d928643]" name="http" duration-ms="349" started-at="2017-07-26T20:08:11Z" finished-at="2017-07-26T20:08:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.fail(Assert.java:100)
+	at script.OutLetRod.http(OutLetRod.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- http -->
+      </class> <!-- script.OutLetRod -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="268154" started-at="2017-07-26T14:34:06Z" finished-at="2017-07-26T14:38:35Z">
+      <class name="script.OutLetRod">
+        <test-method status="PASS" signature="setPath()[pri:0, instance:script.OutLetRod@71423665]" name="setPath" is-config="true" duration-ms="12" started-at="2017-07-26T20:04:06Z" finished-at="2017-07-26T20:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@71423665]" name="open" is-config="true" duration-ms="31583" started-at="2017-07-26T20:04:06Z" finished-at="2017-07-26T20:04:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="EachLetter()[pri:1, instance:script.OutLetRod@71423665]" name="EachLetter" duration-ms="98959" started-at="2017-07-26T20:04:38Z" finished-at="2017-07-26T20:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EachLetter -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@71423665]" name="open" is-config="true" duration-ms="34468" started-at="2017-07-26T20:06:17Z" finished-at="2017-07-26T20:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="infieldClickable()[pri:2, instance:script.OutLetRod@71423665]" name="infieldClickable" duration-ms="17855" started-at="2017-07-26T20:06:51Z" finished-at="2017-07-26T20:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infieldClickable -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@71423665]" name="open" is-config="true" duration-ms="29571" started-at="2017-07-26T20:07:09Z" finished-at="2017-07-26T20:07:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="space()[pri:3, instance:script.OutLetRod@71423665]" name="space" duration-ms="7227" started-at="2017-07-26T20:07:39Z" finished-at="2017-07-26T20:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- space -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:script.OutLetRod@71423665]" name="open" is-config="true" duration-ms="48065" started-at="2017-07-26T20:07:46Z" finished-at="2017-07-26T20:08:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="FAIL" signature="http()[pri:4, instance:script.OutLetRod@71423665]" name="http" duration-ms="397" started-at="2017-07-26T20:08:34Z" finished-at="2017-07-26T20:08:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.fail(Assert.java:100)
+	at script.OutLetRod.http(OutLetRod.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- http -->
+      </class> <!-- script.OutLetRod -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- AutomationSuite -->
 </testng-results>
